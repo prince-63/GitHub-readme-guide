@@ -1,0 +1,153 @@
+github importent keyword and style methods !
+
+
+The most important part of any communication on GitHub is usually the text itself, but how do you show that some parts of the text are more important than others?
+
+1. Using italics in text is as easy as surrounding the target text with single asterisks (*) or single underscores (_). Just be sure to close an emphasis with the same character with which you opened it. Be observant how you combine the use of asterisks and underscores. Here are several examples:
+
+input ----
+This is *italic* text.
+This is also _italic_ text.
+output ----
+This is italic text. This is also italic text.
+
+2. Create bold text by using two asterisks (**) or two underscores (__).
+
+input ----
+This is **bold** text.
+This is also __bold__ text.
+output ----
+This is bold text. This is also bold text.
+
+3. To use a literal asterisk, precede it with an escape character; in GFM, that's a backslash (\). This example results in the underscores and asterisks being shown in the output.
+
+input ----
+\_This is all \*\*plain\*\* text\_.
+output ----
+_This is all **plain** text_.
+
+4. HTML provides content headings, such as the <h1> tag. In Markdown, this is supported via the # symbol. Just use one # for each heading level from 1-6.
+
+input ----
+###### This is H6 text
+output ----
+This is H6 text
+
+5. Image and site links use a similar syntax.
+
+input ----
+![Link an image.](/learn/azure-devops/shared/media/mara.png)
+output ----
+image are show
+
+input ----
+[click me](give your site path)
+output ----
+click me
+
+6. You can define ordered or unordered lists. You can also define nested items through indentation.
+
+Ordered lists start with numbers.
+Unordered lists can use asterisks or dashes (-).
+Here's the Markdown for an ordered list:
+
+input ----
+1. First
+1. Second
+1. Third
+output ----
+1. First
+2. Second
+3. Third
+
+
+input ----
+- First
+  - Nested
+- Second
+- Third
+output ----
+. First
+	.Nested
+. Second
+. Third
+
+7. You can create blockquotes using the greater than (>) character.
+
+input ----
+> This is quoted text.
+output ----
+| This is quoted text.
+
+
+8. Fill the gaps with inline HTML.
+If you come across an HTML scenario not supported by Markdown, you can use that HTML inline.
+
+input ----
+Here is a<br />line break
+output ----
+Here is a
+line break
+
+9. Work with code -
+Markdown provides default behavior for working with inline code blocks delimited by the backtick (`) character. When decorating text with this character, it's rendered as code.
+
+input ----
+This is `code`.
+output ----
+This is code.
+
+If you have a code segment spanning multiple lines, you can use three backticks (```) before and after to create a fenced code block.
+
+input ----
+```
+var first = 1;
+var second = 2;
+var sum = first + second;
+```
+output ----
+var first = 1;
+var second = 2;
+var sum = first + second;
+
+GFM extends this support with syntax highlighting for popular languages. Just specify the language as part of the first tick sequence.
+
+input ----
+```javascript
+var first = 1;
+var second = 2;
+var sum = first + second;
+```
+output ----
+var first = 1;
+var second = 2;
+var sum = first + second;
+
+10. Mention users and teams -
+Typing an @ symbol followed by a GitHub username sends a notification to that person about the comment. This is called an "@mention", because you're mentioning the individual. You can also @mention teams within an organization.
+
+11. Track task lists -
+You can create task lists within issues or pull requests using the following syntax. These can be helpful to track progress when used in the body of an issue or pull request.
+https://learn.microsoft.com/en-gb/training/github/communicate-using-markdown/media/2-task-list.png
+
+this thing use to create checkbox in github readme file.
+
+
+12. Slash commands -
+Slash commands can save you time by reducing the typing required to create complex Markdown.
+
+You can use slash commands in any description or comment field in issues, pull requests, or discussions where that slash command is supported.
+
+Command	Description
+/code -	Inserts a Markdown code block. You choose the language.
+
+/details - Inserts a collapsible detail area. You choose the title and content.
+
+/saved-replies -	Inserts a saved reply. You choose from the saved replies for your user account. If you add %cursor% to your saved reply, the slash command places the cursor in that location.
+
+/table -	Inserts a Markdown table. You choose the number of columns and rows.
+
+/tasklist	Inserts a tasklist. This slash command only works in an issue description.
+
+/template	Shows all of the templates in the repository. You choose the template to insert. This slash command works for issue templates and a pull request template.
+
